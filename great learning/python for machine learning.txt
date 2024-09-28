@@ -1,0 +1,129 @@
+list:
+.............
+-list.append(index_number)
+-list.extend([7,8]) #insert 2 elements
+-list.remove(element)
+-del list[index_number]
+-list[0:5] #print first 5 elements
+
+dictionary;
+................
+-data={'rahim':2, 'karim':3, 'rakib':4} #initilize
+-data={'rahim':[2,4], 'karim':[3,9], 'rakib':[4,5]} #initilize
+-data[rahim] #print data
+-data[abdul]=7
+-data.update({'hakim':3, 'hamid':9})
+-del data['rahim']
+
+pandas:
+................
+import pandas as pd
+df=pd.read_csv("data.csv")   # read csv file
+df=pd.read_xlxs("data.xlxs")   # read excel file
+df.head()  #view some data from dataset
+
+data frame:
+-------------
+df.shape #return size of excel size
+df.head()  # print top 5 rows
+df.tail()   # print bottom 5 rows
+df.head(10) # print top 10 rows
+df.columns   # print all columns title
+df['column_name']  #return this column data
+df[['column1','column2']] # return 2 column data
+df.iloc[1:3,1;2]  # return 1 to 3 row and 1 to 2 column data
+df[df['Age']]==25] #  print all data where age is 25
+
+data manipulation:
+............................................
+sort data:
+------------
+bm = bm.dropna(how="any") # remove null value big mart data set
+sort_bm=bm.sort_values(by='column name') #sort data by one or more column wise
+bm.sort_values(by='Outlet_Establishment_Year', ascending = False #sort in descending order
+bm.sort_values(by='Outlet_Establishment_Year', ascending = True, inplace=True)  #change data in database
+bm.sort_index(inplace= True)  #sort data in row wise meaning retreave the main data
+
+merge data:
+---------------
+result = pd.concat([df1,df2, df3], keys= ['X','Y', 'Z'])  #concat table
+result.loc['Y']  # print only table y 
+result = pd.concat([df1,df2],axis=1, join = 'inner')  #join union set
+result = pd.concat([df1,df2],axis=1, join = 'outer') # join intersection
+result = pd.merge(df1,df2 , on ='id')   # merge 2 table on common column 'id' like intersection same as inner
+result = pd.merge(df1,df3 , on ='A',how='outer')  # merge 2 table like union
+result = pd.merge(df1,df3 , on ='A',how='right') #right table all data show and left common and opposite to left
+
+apply:
+...............
+result.apply(lambda x:x[1])  #table row 2 print
+result.apply(lambda x:x[1], axis=1)  # table column 2 print
+result.apply(lambda x:x['S_ID'], axis=1)  #table column S_ID print
+df1['price'].apply(clip_p)  #clip a price range, clip_p another function
+
+
+aggregation:
+.........................
+sort_by_item=data_bm.groupby('Item_Type') #group wise item show
+sort_by_item.first(10)  #print first 10 row
+sort_by_item.Item_MRP.mean()   # calculate the mean of all type item price
+multiple_group = data_bm[:15].groupby(['Item_Type','Item_Weight'])  #group by 2 column wise. first is more priority
+
+matplotlib:
+...........................
+import matplotlib.pyplot as plt  #import matplotlib
+%matplotlib inline  #display plot in jupiter
+
+import matplotlib.pyplot as plt
+%matplotlib inline
+height = [4, 6, 7, 9]
+weight = [2, 4, 8, 9]
+plt.plot(height,weight)
+plt.title("Height vs Weight")
+plt.xlabel("Height")
+plt.ylabel("Weight")
+ 
+plt.plot(height)
+plt.plot(callory)
+plt.legend(labels = ['height', 'callory'], loc = 'lower right')  #multiple graph color label
+plt.xticks(ticks=[0,1,2,3], labels = ['p1','p2','p3','p4']); # x axis points named
+plt.plot(height, 'g--')   #plot shape and color chanege
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
