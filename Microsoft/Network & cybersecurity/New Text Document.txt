@@ -1,0 +1,3 @@
+define ethernet: networking standard, wire-based LAN networks, for data transmission, error handling, and performance thresholds. It describes the rules for configuring, OSI  data link and physical layers, IEEE 802.3 Standard
+
+MAC: total 6 hexadecimal number(AA-6A-BA-2B-68-C1). first 3 number define org/manufacturer last 3 is device id
